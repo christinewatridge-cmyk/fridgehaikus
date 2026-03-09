@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fridge poem</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="sparkle-layer"></div>
+    <div id="sidebar-left" class="sidebar-column sidebar-left" aria-hidden="true"></div>
+    <div id="sidebar-right" class="sidebar-column sidebar-right" aria-hidden="true"></div>
+
+    <div class="page-frame">
+      <header class="site-header">
+        <div class="site-title">
+          <span class="title-main">fridge poem</span>
+        </div>
+      </header>
+
+      <main class="main-layout">
+        <section class="left-panel">
+          <div class="left-panel-trash-row">
+            <div class="y2k-window">
+              <div class="window-title-bar">
+              <span>~* Haiku Control Panel *~</span>
+                <div class="window-buttons">
+                  <span class="btn-dot btn-min"></span>
+                  <span class="btn-dot btn-max"></span>
+                  <span class="btn-dot btn-close"></span>
+                </div>
+              </div>
+              <div class="window-body">
+              <button id="generate-btn" class="y2k-button">
+                ✧ New Haiku ✧
+              </button>
+              <button id="clear-fridge-btn" class="y2k-button y2k-button-secondary">
+                clear fridge
+              </button>
+              </div>
+            </div>
+            <div id="magnet-trashcan" class="magnet-trashcan" role="img" aria-label="Trash – drag magnets here to delete">
+              <img src="trashcan.png" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <section class="right-panel">
+          <section id="magnet-pool" class="magnet-pool" aria-label="Word magnet options">
+            <!-- 20 magnets populate here on small screens -->
+          </section>
+          <button id="add-magnet-btn" class="y2k-button y2k-button-secondary add-magnet-btn">
+            + add your own magnet
+          </button>
+          <div class="fridge-wrapper">
+            <div class="fridge" id="fridge">
+              <div id="freezer-strip"></div>
+              <div id="fridge-overlay" class="fridge-overlay">
+                <div id="haiku-container" aria-live="polite"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <span>© 2000‑something · designed by christine watridge in cursor</span>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
